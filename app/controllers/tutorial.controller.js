@@ -6,7 +6,7 @@ const TutorialModel = require(path.join(__dirname,"../models/tutorial.model"));
 exports.create = (req,res)=>{
 
     if(!req.body.title){
-        res.staus(400).send({message:"Title cannot be empty"})
+        res.status(400).send({message:"Title cannot be empty"})
     }
 
     const {title,description,published}=req.body;
